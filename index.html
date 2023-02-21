@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalKimera</title>
+    <link rel="stylesheet" href="CSS/styleheader.css">
+    
+    <link rel="shortcut icon" href="images/logotipo/logo20px.png" type="image/x-icon">
+    
+
+</head>
+<body>
+
+  <!--menu-->
+
+  <header class="block">
+    <nav>
+      <div class="menu-container">
+        
+        <a href="index.html" class="logo">
+          <img src="images/logotipo/logo20px.png" alt="Logotipo" class="logo-img">
+          <h2 class="nombre-empresa">Digital Kimera</h2>
+        </a>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <img class="menu-ico" src="images/iconos/menu.png" alt="Menu">
+        </label>
+        <ul>
+          <li>
+            <a href="Acerca" class="header-menu-tab"><span>Acerca de</span></a>
+          </li>
+          <li>
+            <a href="Servicios" class="header-menu-tab"><span>Servicios</span></a>
+          </li> 
+          <li>
+            <a href="Proyectos" class="header-menu-tab"><span>Proyectos</span></a>
+          </li>
+          <li>
+            <button id="myBtn"><img src="images/iconos/login.png" class="sublogo header-item sublogo-img"></button>
+          </li>
+          <li>
+            <a class="sublogo header-item " href="https://www.facebook.com/profile.php?id=100063825531920">
+              <img src="images/logotipo/facebook.png" alt="Facebook" class="sublogo-img">
+            </a>
+          </li>
+          <li>
+            <a class="sublogo header-item" href="#">
+              <img src="images/logotipo/instagram.png" alt="Instagram" class="sublogo-img">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+<!--modal inicio de sesión-->
+<div id="myModal" name="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form action="">
+      <h1 class="modal-ins">Bienvenido</h1>
+      <ul>
+        <li>
+          <img class="icoins" src="images/iconos/user.png">
+          <label>
+            <input class="formins" type="text" id="user" placeholder="Usuario"> 
+          </label>
+        </li>
+        <li>
+          <img class="icoins" src="images/iconos/lock.png">
+          <label>
+            <input class="formins" type="password" id="password" placeholder="Contraseña"> 
+          </label>
+        </li>
+        <li>
+          <button id="myBtn1"><img src="images/iconos/add-user.png" class="btn-modal"><a href="register.html"></a></button>
+        
+          <button id="myBtn2"><img src="images/iconos/forgot.png" class="btn-modal"></button>
+        </li>
+      </ul>
+      <button id="btninicio">Iniciar</button>
+    </form>
+    
+  </div>
+</div>
+
+
+<!--slide mejorado-->
+
+<main>
+  <div id="slider">
+    <div id="slider-content">
+      <div class="meta">Servicios</div>
+      <h2 id="slide-title">UX/UI</h2>
+      <span data-slide-title="0">UX/UI</span>
+      <span data-slide-title="1">DigitalMarketing</span>
+      <span data-slide-title="2">Manual de identidad</span>
+      <span data-slide-title="3">Páginas web</span>
+      <span data-slide-title="4">Fotografia</span>
+      <span data-slide-title="5">Multimedia</span>
+      <div class="meta">Experiencia</div>
+      <div id="slide-status">Diseño de experiencias digitales que mejoran la usabilidad, accesibilidad y satisfacción del usuario.</div>
+      <span data-slide-status="0">Diseño de experiencias digitales que mejoran la usabilidad, accesibilidad y satisfacción del usuario.</span>
+      <span data-slide-status="1">Estrategias digitales para promocionar tu marca y llegar a más clientes potenciales a través de canales como redes sociales, publicidad online y email marketing.</span>
+      <span data-slide-status="2">Creación de un manual de marca que establece los lineamientos y normas para la correcta aplicación de la identidad visual de tu empresa, incluyendo logotipo, colores, tipografía y otros elementos.</span>
+      <span data-slide-status="3">Diseño y desarrollo de páginas web personalizadas, adaptadas a las necesidades de tu empresa y optimizadas para buscadores.</span>
+      <span data-slide-status="4">Servicio de fotografía profesional para productos, eventos, retratos y más.</span>
+      <span data-slide-status="5">Producción de contenidos multimedia como videos, animaciones, presentaciones y otros recursos visuales para promocionar tu empresa.</span>
+      
+      <img class="sliderimg" src="images/banner/1.jpg">
+      <img class="sliderimg" src="images/banner/2.jpg">
+      <img class="sliderimg" src="images/banner/3.jpg">
+      <img class="sliderimg" src="images/banner/4.jpg">
+      <img class="sliderimg" src="images/banner/5.jpg">
+      <img class="sliderimg" src="images/banner/6.jpg">
+    </div>
+  
+    <div id="pagination">
+      <button class="active buttonslide" data-slide="0"></button>
+      <button class="buttonslide" data-slide="1"></button>
+      <button class="buttonslide" data-slide="2"></button>
+      <button class="buttonslide" data-slide="3"></button>
+      <button class="buttonslide" data-slide="4"></button>
+      <button class="buttonslide" data-slide="5"></button>
+    </div>
+  </div>
+  
+</main>
+<script src="JS/banner.mjs"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+
+
+
+<!-- presentacion empresa-->
+  <div class="presentemp">
+    <div class="imgpres">
+      <img src="images/servicios/presentacionimg_01.png">
+    </div>
+      <div class="present-overlay"> <!-- Agregamos este div para el cuadro blanco -->
+        <div class="presentimg">
+          <img src="images/logotipo/logotipo250.png">
+        </div>
+      <div class="Presentinfo">   
+        <div class="presenttext">
+          <h1>
+            <span class="lowercase">Digital</span> 
+            <span class="capital">Kimera</span>
+          </h1>
+          
+        <p>Digital Kimera <span class="capital">es una empresa especializada en el diseño digital</span> que tiene como objetivo ayudar a las empresas a alcanzar su máximo potencial a través <span class="capital">de soluciones innovadoras y personalizadas.</span><br><br>
+          <span class="capital"> Con más de 4 años de experiencia</span>, nuestro equipo está conformado por ingenieros en sistemas y diseñadores digitales altamente capacitados.<br><br>
+          <span class="capital">Hemos trabajado con empresas de diversos sectores</span>, desde pequeñas startups hasta grandes corporaciones, <span class="capital">para mejorar su presencia en línea y lograr un mayor impacto en su mercado.</span><br><br>
+          <span class="capital">Nuestra metodología de trabajo se basa en la colaboración estrecha con el cliente</span>, lo que nos permite entender sus necesidades y desarrollar soluciones a medida.<br><br>
+           En Digital Kimera, <span class="capital">estamos comprometidos con la excelencia en todo lo que hacemos</span>, y estamos constantemente actualizando nuestras habilidades y conocimientos para ofrecer servicios de vanguardia a nuestros clientes.</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+ 
+  
+ <!--carousel-->
+ <div class="logo-area">
+  <div class="container">
+    <h1 class="logo-text">
+      <span class="lowercase">Logos</span> <br>
+      <span class="capital">Realizados</span></h1>
+  </div>
+  <div class="logo-carousel" id="carousel">
+  
+    <script>
+        const logos = {
+  "ABAK": "images/Logotiposhechos/ABAK.png",
+  "HUNNAB": "images/Logotiposhechos/HUNNAB.png",
+  "KING": "images/Logotiposhechos/KING.png",
+  "LEON": "images/Logotiposhechos/LEON.png",
+  "PREDIAL": "images/Logotiposhechos/PREDIAL.png",
+  "SIAAPIB": "images/Logotiposhechos/SIAAPIB.png",
+  "SIAU": "images/Logotiposhechos/SIAU.png",
+  "VIGMA": "images/Logotiposhechos/VIGMA.png"
+};
+
+const logoArea = document.querySelector('.logo-area');
+logoArea.style.backgroundColor = '#111a1f';
+logoArea.style.paddingTop = '50px';
+logoArea.style.paddingBottom = '50px';
+
+const logoCarousel = document.querySelector('.logo-carousel');
+for (const logo in logos) {
+  const logoItem = document.createElement('div');
+  logoItem.classList.add('logo-item');
+
+  const logoImage = document.createElement('img');
+  logoImage.src = logos[logo];
+  logoImage.style.minWidth = '50px';
+  logoImage.style.maxWidth = '65px';
+  logoImage.style.marginLeft = 'auto';
+  logoImage.style.marginRight = 'auto';
+
+  logoItem.appendChild(logoImage);
+  logoCarousel.appendChild(logoItem);
+}
+
+// Clonar todo el conjunto de elementos del carrusel y agregarlo al final
+const logoItems = logoCarousel.querySelectorAll('.logo-item');
+logoCarousel.appendChild(logoItems[0].cloneNode(true));
+logoCarousel.appendChild(logoItems[1].cloneNode(true));
+logoCarousel.appendChild(logoItems[2].cloneNode(true));
+logoCarousel.appendChild(logoItems[3].cloneNode(true));
+
+console.log("Logo count before cloning:", logoCarousel.children.length);
+
+const companies = Object.keys(logos);
+
+const intervalo = 2000; // 1 segundos
+const duracionTransicion = 2000; // 1 segundo
+let index = 0;
+
+const logoCount = logoCarousel.children.length;
+setInterval(() => {
+  index++;
+  logoCarousel.style.transition = `transform ${duracionTransicion / 1000}s linear`;
+  logoCarousel.style.transform = `translateX(-${index * 20}%)`;
+  if (index >= logoCount - 1) {
+    setTimeout(() => {
+      index = 0;
+      logoCarousel.style.transition = 'none';
+      logoCarousel.style.transform = `translateX(0)`;
+    }, duracionTransicion);
+  }
+}, intervalo);
+
+
+
+    </script>
+  </div>
+</div>
+
+ <!--CTA-->
+ <div class="CTA">
+  <div class="CTA-white">
+  <h1 class="CTA-T"> <span class="lowercase">Contáctanos y </span> <br>
+    <span class="capital">lleva tu marca al siguiente nivel</span></h1>
+    <div class="CTA-L"></div>
+  <p class="CTA-P">En Digital Kimera, te brindamos un servicio personalizado y adaptado a tus necesidades.<br><br><span class="capital"> Contamos con paquetes especiales diseñados para ti. <br><br>¡No dudes en contactarnos!</span> Obtén una cotización gratuita y sin compromiso para llevar tu proyecto al éxito.</p>
+</div>
+</div>
+
+ <!-- tarjets-->
+ <div style="height: 15%;width: 100%; background-color: #DCDCDC;">
+  <br>
+  
+<h1 style="text-align: center;padding: 2%;background-color: #222831;margin-top: 5%;color: white;">Importancia...</h1>
+<br></div>
+
+ <div class="content-tarjets"> 
+  <div  class="card">
+    <figure>
+      <img src="images/servicios/diseñolog.jpg">
+    </figure>
+    <div class="resumen">
+      <h3>De un logotipo</h3>
+      <p>Un logotipo es un elemento visual que representa a una empresa o marca. Es un elemento fundamental para la identidad visual de una empresa y puede ser utilizado en diversos materiales de marketing, como tarjetas de visita, folletos, anuncios publicitarios y en el sitio web de la empresa.</p>
+    <a href="#">Leer más</a>
+    </div>
+  </div>
+  <div  class="card">
+    <figure>
+      <img src="images/servicios/manualid.webp">
+    </figure>
+    <div class="resumen">
+      <h3>De un manual de identidad</h3>
+      <p>Un manual de identidad es un documento que establece las pautas y directrices para el uso de la identidad visual de una empresa o marca. Este manual incluye elementos como el logotipo, los colores corporativos, el tipo de letra, las imágenes y el lenguaje visual.</p>
+    <a href="#">Leer más</a>
+    </div>
+  </div>
+  <div  class="card">
+    <figure>
+      <img src="images/servicios/plancontingencia.jpg">
+    </figure>
+    <div class="resumen">
+      <h3>De un plan de contingencia</h3>
+      <p>Un plan de contingencia es un plan de acción que se desarrolla con el fin de prepararse ante posibles situaciones de emergencia o desastres. Estos planes se utilizan en diversos ámbitos, como empresas, organizaciones sin fines de lucro, gobiernos y comunidades.</p>
+    <a href="#">Leer más</a>
+    </div>
+  </div>
+ </div>
+<footer>
+  <div class="footcont">
+  <img class="footlogo" src="images/logotipo/logo20px.png">
+  
+</div>
+    
+  <div class="footcont">
+    
+      <h4 style="color: white; cursor: pointer;">Horario de atención</h4>
+      <span style="color: white; cursor: pointer;">Lunes a Viernes</span>
+      <p style="color: white; cursor: pointer;">9:00 am - 5:00pm</p>
+      <h4 style="color: white; cursor: pointer;margin-top: 10px">Teléfonos</h4>
+      <span style="color: white; cursor: pointer;margin-top: 5px;">México</span>
+      <p style="color: white; cursor: pointer;">+52 775 137 1062</p>
+      <span style="color: white; cursor: pointer;margin-top: 5px">Perú</span>
+      <p style="color: white;">+51 775 953 325072</p>
+    </div>
+  
+  <div class="footcont">
+    
+  <ul class="footlist">
+    <li class="foot">Legal</li>
+    <li class="foot">Cookies</li>
+    <li class="foot">Privacy</li>
+    <li class="foot">Shipping</li>
+    <li class="foot">Refounds</li>
+  </ul>
+</div>
+<div class="footcont">
+  <div class="footer-s">
+    <a href="https://www.facebook.com/profile.php?id=100063825531920" class="href"><img src="images/logotipo/facebook.png" alt="Facebook" class="footico"></a>
+    <br>
+    <a href="" class="href"><img src="images/logotipo/instagram.png" alt="Instagram" class="footico"></a>
+    </div>
+</div>
+
+</footer>
+<span class="copyright">&copy;2023, Itzel Villar. All rights reserved.</span>
+
+<script src="JS/modalins.js"></script>
+
+
+      
+</body>
+
+
+</html>

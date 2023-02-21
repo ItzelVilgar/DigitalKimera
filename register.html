@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalKimera</title>
+    <link rel="stylesheet" href="CSS/register.css">
+    
+    <link rel="shortcut icon" href="images/logotipo/logo20px.png" type="image/x-icon">
+    
+
+</head>
+<body>
+
+  <!--menu-->
+
+  <header class="block">
+    <nav>
+      <div class="menu-container">
+        
+        <a href="index.html" class="logo">
+          <img src="images/logotipo/logo20px.png" alt="Logotipo" class="logo-img">
+          <h2 class="nombre-empresa">Digital Kimera</h2>
+        </a>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <img class="menu-ico" src="images/iconos/menu.png" alt="Menu">
+        </label>
+        <ul>
+          <li>
+            <a href="Acerca.html" class="header-menu-tab"><span>Acerca de</span></a>
+          </li>
+          <li>
+            <a href="Servicios" class="header-menu-tab"><span>Servicios</span></a>
+          </li> 
+          <li>
+            <a href="Proyectos" class="header-menu-tab"><span>Proyectos</span></a>
+          </li>
+          <li>
+            <button id="myBtn"><img src="images/iconos/login.png" class="sublogo header-item sublogo-img"></button>
+          </li>
+          <li>
+            <a class="sublogo header-item " href="https://www.facebook.com/profile.php?id=100063825531920">
+              <img src="images/logotipo/facebook.png" alt="Facebook" class="sublogo-img">
+            </a>
+          </li>
+          <li>
+            <a class="sublogo header-item" href="#">
+              <img src="images/logotipo/instagram.png" alt="Instagram" class="sublogo-img">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+<!--registro-->
+
+  <div class="cont-register">
+    <div class="imgreg">
+      <img src="images/servicios/presentacionimg_01.png">
+    </div>
+      <div class="present-overlay-reg"> <!-- Agregamos este div para el cuadro blanco -->
+        <div class="regimg">
+          <img src="images/servicios/bienvenido.png">
+        </div>
+      <div class="reginfo">   
+        <div class="modal-content-reg">
+
+              <h1 class="Title-Reg">Registro</h1>
+              <ul>
+                <li class="li-iin">
+                  <img class="icoreg" src="images/iconos/user.png">
+                  <label>
+                    <input class="formreg" type="text" id="user" placeholder="Usuario"> 
+                  </label>
+                </li>
+                <li class="li-iin">
+                    <img class="icoreg" src="images/iconos/user.png">
+                    <label>
+                      <input class="formreg" type="mail" id="email" placeholder="Correo"> 
+                    </label>
+                  </li>
+                <li class="li-iin">
+                  <img class="icoreg" src="images/iconos/lock.png">
+                  <label>
+                    <input class="formreg" type="password" id="password" placeholder="Contraseña"> 
+                  </label>
+                </li>
+                <li class="li-iin">
+                    <img class="icoreg" src="images/iconos/lock.png">
+                    <label>
+                      <input class="formreg" type="password" id="password" placeholder="Repetir contraseña"> 
+                    </label>
+                  </li>
+               
+              </ul>
+              <button id="btninicio">Iniciar</button>
+            </form>
+            
+          </div>
+      </div>
+
+    </div>
+    
+  </div>
+
+
+  <!--modal inicio de sesión-->
+<div id="myModal" name="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form action="">
+      <h1 class="modal-ins">Bienvenido</h1>
+      <ul>
+        <li>
+          <img class="icoins" src="images/iconos/user.png">
+          <label>
+            <input class="formins" type="text" id="user" placeholder="Usuario"> 
+          </label>
+        </li>
+        <li>
+          <img class="icoins" src="images/iconos/lock.png">
+          <label>
+            <input class="formins" type="password" id="password" placeholder="Contraseña"> 
+          </label>
+        </li>
+        <li>
+          <button id="myBtn1"><img src="images/iconos/add-user.png" class="btn-modal"><a href="register.html"></a></button>
+        
+          <button id="myBtn2"><img src="images/iconos/forgot.png" class="btn-modal"></button>
+        </li>
+      </ul>
+      <button id="btninicio">Iniciar</button>
+    </form>
+    
+  </div>
+</div>
+  
+<script src="JS/modalins.js"></script>
+
+</body>
