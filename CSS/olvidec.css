@@ -159,29 +159,219 @@
 /*olvide contraseña*/
 
 .cont-olvc{
-    align-items: center;
-    margin-top: 85px;
-    height: 605px;
-    width: 100%;
-    display: flex;
-    overflow: hidden;
-    position: relative;
+  align-content: center;
+  margin-top: 85px;
+  height:605px;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative; 
+}
+.imgolvc {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  align-content: center;
+  opacity: 100%;
+  position: fixed;
+
 }
 .present-overlay-olvc{
-    background: white;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    display: flex;
-    position: absolute;
-    width: 50%;
-    height: 60%;
-    border-radius: 10px;
-    margin: 10% 25%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  display: flex; /* Agregamos display flex */
+  position: absolute;
+  width: 50%;
+  height: 60%;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10% 25%;
+  padding: 0;
 }
-.present-overlay .olvcimg img{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0%
+.present-overlay-olvc .olvcimg img{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0%
+}
+.olvcinfo{
+  z-index: 1;
+  width: 100%;
+
+  color: #000;
+  max-width: 60%;
+  text-justify: auto;
+  display: flex;
+text-align: center;
+align-items: center;
+
+}
+
+.modal-content-olvc{
+  padding: 10%;
+}
+.Title-olvc{
+  color: #F48F0F;
+  margin: 5%
+}
+.li-olvc {
+margin-top: 10%;
+}
+.icoolvc{
+  width: 20px;
+  height: 20px;
+  margin-right: 0;
+}
+
+.formolvc{
+  outline: none;
+  border:none;
+  color: #111a1f;
+  border-bottom: solid 1px #f48f0f;
+  padding: 2% 0;
+  font-size: 18px;
+}
+
+form label input::placeholder{
+  color: #282C34;
+}
+form .link{
+  margin-bottom: 20px;
+  color: #111a1f;
+}
+
+#btninicio{
+ margin: 15%;
+  border: none;
+  background: linear-gradient(to top ,#FFC107 , #F48F0F);
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+}
+@media (max-width: 768px) {
+  .present-overlay-olvc {
+    width: 80%;
+    margin: 20% 10%;
+  }
+  .imgolvc {
+    height: auto;
+
+  }
+  .formolvc{
+    outline: none;
+    border:none;
+    color: #111a1f;
+    border-bottom: solid 1px #f48f0f;
+    padding: 1% 0;
+    font-size: 12px;
+  }
+}
 
 
+
+
+ /*Modal inicio de sesion*/
+.display-block {
+display: block;
 }
+
+.display-none {
+display: none;
+}
+
+.modal {
+display: none; /* Oculta la ventana modal por defecto */
+position: fixed; /* Posición fija para que no se mueva con el scroll */
+z-index: 1; /* Asegura que la ventana modal esté por encima de todo */
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto; /* Permite desplazarse por el contenido de la ventana modal */
+background-color: rgba(0,0,0,0.4); /* Fondo oscurecido para destacar la ventana modal */
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.modal-content {
+background-color: #fefefe;
+margin: 15% auto;
+padding: 20px;
+border: 1px solid #888;
+width: 80%;
+text-align: center;
+flex-direction: column;
+padding: 20px 25 px;
+}
+
+.modal-ins{
+color: #f48f0f;
+font-size: 38px;
+font-weight: 800;
+margin-bottom: 30px;
+text-align: center;
+flex-direction: column;
+}
+form label{
+margin-bottom: 30px;
+}
+.icoins{
+width: 40px;
+height: 40px;
+margin-right: 10px;
+}
+
+.formins{
+outline: none;
+border:none;
+color: #111a1f;
+border-bottom: solid 1px #f48f0f;
+padding: 0 5px;
+font-size: 18px;
+}
+
+form label input::placeholder{
+color: #282C34;
+}
+form .link{
+margin-bottom: 15px;
+color: #111a1f;
+}
+
+#btninicio{
+margin: 2%;
+border: none;
+background: linear-gradient(to top ,#FFC107 , #F48F0F);
+padding: 10px 15px;
+cursor: pointer;
+font-size: 20px;
+color: white;
+}
+#myBtn, #myBtn1, #myBtn2 {
+background-color: transparent;
+border: none;
+padding: 1%;
+}
+
+
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+/*btn modales*/
+.btn-modal{
+height: 40px;
+width: 40px;
+align-items: center;
+flex-direction: row;
+
+}
+
