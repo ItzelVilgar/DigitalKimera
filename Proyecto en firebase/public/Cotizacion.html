@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalKimera</title>
+    <link rel="stylesheet" href="CSS/styleheader.css">
+    <link rel="stylesheet" href="CSS/cot.css">
+    
+    <link rel="shortcut icon" href="images/logotipo/logo20px.png" type="image/x-icon">
+    
+
+</head>
+<body>
+
+  <!--menu-->
+
+  <header class="block">
+    <nav>
+      <div class="menu-container">
+        
+        <a href="index.html" class="logo">
+          <img src="images/logotipo/logo20px.png" alt="Logotipo" class="logo-img">
+          <h2 class="nombre-empresa">Digital Kimera</h2>
+        </a>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <img class="menu-ico" src="images/iconos/menu.png" alt="Menu">
+        </label>
+        <ul>
+          <li>
+            <a href="Acerca" class="header-menu-tab"><span>Acerca de</span></a>
+          </li>
+          <li>
+            <a href="Servicios" class="header-menu-tab"><span>Servicios</span></a>
+          </li> 
+          <li>
+            <a href="Proyectos" class="header-menu-tab"><span>Proyectos</span></a>
+          </li>
+          <li>
+            <button id="myBtn"><img src="images/iconos/login.png" class="sublogo header-item sublogo-img"></button>
+          </li>
+          <li>
+            <a class="sublogo header-item " href="https://www.facebook.com/profile.php?id=100063825531920">
+              <img src="images/logotipo/facebook.png" alt="Facebook" class="sublogo-img">
+            </a>
+          </li>
+          <li>
+            <a class="sublogo header-item" href="#">
+              <img src="images/logotipo/instagram.png" alt="Instagram" class="sublogo-img">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+<!--modal inicio de sesión-->
+<div id="myModal" name="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form action="">
+      <h1 class="modal-ins">Bienvenido</h1>
+      <ul>
+        <li>
+          <img class="icoins" src="images/iconos/user.png">
+          <label>
+            <input class="formins" type="text" id="user" placeholder="Usuario"> 
+          </label>
+        </li>
+        <li>
+          <img class="icoins" src="images/iconos/lock.png">
+          <label>
+            <input class="formins" type="password" id="password" placeholder="Contraseña"> 
+          </label>
+        </li>
+        <li>
+          <button id="myBtn1"><img src="images/iconos/add-user.png" class="btn-modal"><a href="register.html"></a></button>
+        
+          <button id="myBtn2"><img src="images/iconos/forgot.png" class="btn-modal"></button>
+        </li>
+      </ul>
+      <button id="btninicio">Iniciar</button>
+    </form>
+    
+  </div>
+</div>
+
+<!--Seleciona el servicio-->
+<div class="cont">
+    <div class="Select-service">
+        <h1>Cotización de proyecto</h1>
+    </div>
+    
+    <div class="select-menu">
+        <div class="select-btn">
+          <span class="sBtn-text">Selecciona tu servicio</span>
+          <img class="arrow-down" src="images/iconos/flecha-hacia-abajo.png">
+        </div>
+      
+        <ul class="options">
+          <li class="opcion" data-target="CotUXUI" >
+            <span class="option-text" id="UX/UI">Diseño UX/UI</span>
+          </li>
+          <li class="opcion" data-target="CotMarketing">
+            <span class="option-text"id="Marketing">Digital Marketing</span>
+          </li>
+          <li class="opcion" data-target="CotManualI">
+            <span class="option-text" id="ManualI">Manual de identidad</span>
+          </li>
+          <li class="opcion" data-target="CotWeb">
+            <span class="option-text" id="Web">Páginas Web</span>
+          </li>
+          <li class="opcion" data-target="CotFotografia">
+            <span class="option-text" id="Fotografia">Fotografía</span>
+          </li>
+          <li class="opcion" data-target="CotMultimedia">
+            <span class="option-text" id="Multimedia">Multimedia</span>
+          </li>
+          <li class="opcion" data-target="CotIlustracion">
+            <span class="option-text" id="Ilustracion">Ilustración Digital</span>
+          </li>
+        </ul>
+      </div>
+      
+</div>
+
+<div class="deco"></div>
+<!--CotUXUI-->
+<div class="content" id="CotUXUI" style="display: none;">
+
+  <div class="inputbox">
+    <input class="nombre-empresa" type="text" required="required">
+    <span>Nombre del proyecto</span>
+  </div>
+  <div class="inputbox">
+    <input class="cuestinoario" type="text" required="required">
+    <span>Público objetivo</span>
+  </div>
+
+
+  <div class="inputbox">
+    <input class="cuestinoario" type="text" required="required">
+    <span>Requisitos</span>
+  </div>
+  <div class="inputbox">
+    <input class="cuestinoario" type="text" required="required">
+    <span>Resultado esperado</span>
+    <div class="inputbox">
+      <input class="cuestinoario" type="text" required="required">
+      <span>Caracteristicas principales</span>
+    </div>
+    <div class="inputbox">
+      <input class="cuestinoario" type="text" required="required">
+      <span>Especificación técnica</span>
+    </div>
+  </div>
+
+  <div class="content" id="CotUXUI" style="display: none;">
+
+
+    <div class="inputbox">
+      <input id="nombre-proyecto" type="text" required="required" >
+      <span>Nombre del proyecto</span>
+    </div>
+    <div class="inputbox">
+      <input id="nombre-proyecto" type="email" required="required" >
+      <span>Correo</span>
+    </div>
+    <div class="inputbox">
+      <input id="Correo" class="cuestinoario" type="text" required="required">
+      <span>Correo</span>
+    </div>
+    <div class="inputbox">
+      <input id="publico-objetivo" class="cuestinoario" type="text" required="required">
+      <span>Público objetivo</span>
+    </div>
+  
+    
+  
+  
+    <div class="inputbox">
+      <input id="Requisitos" class="cuestinoario" type="text" required="required">
+      <span>Requisitos</span>
+    </div>
+    <div class="inputbox">
+      <input is="resultado-esperado" class="cuestinoario" type="text" required="required">
+      <span>Resultado esperado</span>
+      </div>
+      <div class="inputbox">
+        <input id="c-principales" class="cuestinoario" type="text" required="required">
+        <span>Caracteristicas principales</span>
+      </div>
+      <div class="inputbox">
+        <input id="Especificacion" class="cuestinoario" type="text" required="required">
+        <span>Especificación técnica</span>
+      </div>
+    
+  </div>
+  <leyend>Tipo de solución</leyend>
+            <div class="option">
+              <div class="switch">
+                <input class ="check"type="checkbox" id="btn-appmovil">
+                <label for="btn-appmovil" class="lbl-switch" onclick=""></label>
+              </div>
+              <span class="text-switch">Aplicación móvil</span>
+            </div>
+              
+              <div class="option">
+                <div class="switch">
+                  <input type="checkbox" id="btn-pagweb">
+                  <label for="btn-pagweb" class="lbl-switch" onclick=""></label>
+                </div>
+                <span class="text-switch">Página web</span>
+              </div>
+              <div class="option">
+                <div class="switch">
+                  <input type="checkbox" id="btn-software">
+                <label for="btn-software" class="lbl-switch" onclick=""></label>
+                </div>
+                <span class="text-switch">Software empresarial</span>
+              </div>
+              <button class="submit" id="Guardar" onclick="">
+                Guardar
+              </button>
+              
+               
+</div>
+
+
+<!--CotMarketing-->
+<div class="content" id="CotMarketing">
+
+
+</div>
+<!--CotManualI-->
+<div class="content" id="CotManualI">
+
+
+</div>
+<!--CotWeb-->
+<div class="content" id="CotWeb">
+
+
+</div>
+<!--CotFotografia-->
+<div class="content" id="CotFotografia">
+
+
+</div>
+<!--CotMultimedia-->
+<div class="content" id="CotMultimedia">
+
+
+</div>
+<!--CotIlustracion-->
+<div class="content" id="CotIlustracion">
+
+
+</div>
+
+
+
+
+
+<div class="deco"></div>
+<script src="JS/Cotizacion.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
