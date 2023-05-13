@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalKimera</title>
+    <link rel="stylesheet" href="CSS/styleheader.css">
+    <link rel="stylesheet" href="CSS/cot.css">
+    
+    <link rel="shortcut icon" href="images/logotipo/logo20px.png" type="image/x-icon">
+    
+
+</head>
+<body>
+
+  <!--menu-->
+
+  <header class="block">
+    <nav>
+      <div class="menu-container">
+        
+        <a href="index.html" class="logo">
+          <img src="images/logotipo/logo20px.png" alt="Logotipo" class="logo-img">
+          <h2 class="nombre-empresa">Digital Kimera</h2>
+        </a>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <img class="menu-ico" src="images/iconos/menu.png" alt="Menu">
+        </label>
+        <ul>
+          <li>
+            <a href="Acerca" class="header-menu-tab"><span>Acerca de</span></a>
+          </li>
+          <li>
+            <a href="Servicios" class="header-menu-tab"><span>Servicios</span></a>
+          </li> 
+          <li>
+            <a href="Proyectos" class="header-menu-tab"><span>Proyectos</span></a>
+          </li>
+          <li>
+            <button id="myBtn"><img src="images/iconos/login.png" class="sublogo header-item sublogo-img"></button>
+          </li>
+          <li>
+            <a class="sublogo header-item " href="https://www.facebook.com/profile.php?id=100063825531920">
+              <img src="images/logotipo/facebook.png" alt="Facebook" class="sublogo-img">
+            </a>
+          </li>
+          <li>
+            <a class="sublogo header-item" href="#">
+              <img src="images/logotipo/instagram.png" alt="Instagram" class="sublogo-img">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+<!--modal inicio de sesión-->
+<div id="myModal" name="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form action="">
+      <h1 class="modal-ins">Bienvenido</h1>
+      <ul>
+        <li>
+          <img class="icoins" src="images/iconos/user.png">
+          <label>
+            <input class="formins" type="text" id="user" placeholder="Usuario"> 
+          </label>
+        </li>
+        <li>
+          <img class="icoins" src="images/iconos/lock.png">
+          <label>
+            <input class="formins" type="password" id="password" placeholder="Contraseña"> 
+          </label>
+        </li>
+        <li>
+          <button id="myBtn1"><img src="images/iconos/add-user.png" class="btn-modal"><a href="register.html"></a></button>
+        
+          <button id="myBtn2"><img src="images/iconos/forgot.png" class="btn-modal"></button>
+        </li>
+      </ul>
+      <button id="btninicio">Iniciar</button>
+    </form>
+    
+  </div>
+</div>
+
+<!--Seleciona el servicio-->
+<div class="cont">
+    <div class="Select-service">
+        <h1>Cotización de proyecto</h1>
+    </div>
+    
+    <div class="select-menu">
+        <div class="select-btn">
+          <span class="sBtn-text">Selecciona tu servicio</span>
+          <img class="arrow-down" src="images/iconos/flecha-hacia-abajo.png">
+        </div>
+      
+        <ul class="options">
+          <li class="opcion" data-target="CotUXUI" >
+            <span class="option-text" id="UX/UI">Diseño UX/UI</span>
+          </li>
+          <li class="opcion" data-target="CotMarketing">
+            <span class="option-text"id="Marketing">Digital Marketing</span>
+          </li>
+          <li class="opcion" data-target="CotManualI">
+            <span class="option-text" id="ManualI">Manual de identidad</span>
+          </li>
+          <li class="opcion" data-target="CotWeb">
+            <span class="option-text" id="Web">Páginas Web</span>
+          </li>
+          <li class="opcion" data-target="CotFotografia">
+            <span class="option-text" id="Fotografia">Fotografía</span>
+          </li>
+          <li class="opcion" data-target="CotMultimedia">
+            <span class="option-text" id="Multimedia">Multimedia</span>
+          </li>
+          <li class="opcion" data-target="CotIlustracion">
+            <span class="option-text" id="Ilustracion">Ilustración Digital</span>
+          </li>
+        </ul>
+      </div>
+      
+</div>
+
+<div class="deco"></div>
+<!--CotUXUI-->
+
+<div class="content" id="CotUXUI" style="display: none;">
+  <form id="cotizacion_UXUI">
+    <h1 style="color:#17A2B8">Datos del usuario</h1>
+  <div class="infocliente" style="border:2px #17A2B8; padding: 10px;
+  margin-left: 50px; border-radius: 20px;">
+ 
+    <div class="inputbox">
+      <input  type="text" required="required" id="solicitante_UXUI">
+      <span>Nombre del solicitante</span>
+    </div>
+  <div class="inputbox">
+      <input type="email" required="required" id="correo_UXUI">
+      <span>Correo</span>
+  </div><div class="inputbox">
+      <input  type="tel" required="required" id="telefono_UXUI">
+      <span>Whats app</span>
+    </div>
+  </div>
+  <h1 style="color:#17A2B8">Datos del proyecto</h1>
+  <div class="infoproyecto">
+ <div class="inputbox">
+    <input class="nombre-empresa" type="text" required="required" id="PROYECTO_UXUI">
+    <span>Nombre del proyecto</span>
+  </div>
+  <div class="inputbox">
+    <input class="cuestinoario" type="text" required="required" id="Publico_UXUI">
+    <span>Público objetivo</span>
+  </div>
+  <div class="inputbox">
+    <input class="cuestinoario" type="text" required="required" id="Requisito_UXUI">
+    <span>Requisitos</span>
+  </div>
+  <div class="inputbox">
+    <input class="cuestinoario" type="text" required="required"id="Resultado_UXUI">
+    <span>Resultado esperado</span>
+  </div>
+  <div class="inputbox">
+      <input class="cuestinoario" type="text" required="required" id="Caracteristica_UXUI">
+      <span>Caracteristicas principales</span>
+    </div>
+  <div class="inputbox">
+      <input class="cuestinoario" type="text" required="required" id="Especificacion_UXUI">
+      <span>Especificación técnica</span>
+    </div>
+
+  <leyend>Tipo de solución</leyend>
+            <div class="option">
+              <div class="switch">
+                <input class ="check"type="checkbox" id="btn-appmovil">
+                <label for="btn-appmovil" class="lbl-switch" onclick=""></label>
+              </div>
+              <span class="text-switch">Aplicación móvil</span>
+            </div>
+              
+              <div class="option">
+                <div class="switch">
+                  <input type="checkbox" id="btn-pagweb">
+                  <label for="btn-pagweb" class="lbl-switch" onclick=""></label>
+                </div>
+                <span class="text-switch">Página web</span>
+              </div>
+              <div class="option">
+                <div class="switch">
+                  <input type="checkbox" id="btn-software">
+                <label for="btn-software" class="lbl-switch" onclick=""></label>
+                </div>
+                <span class="text-switch">Software empresarial</span>
+              </div>
+  
+              <button class="submit" id="Guardar" onclick="guardar()">
+                Guardar
+              </button>
+              
+ </form>
+ </div>            
+               
+</div>
+
+
+<!--CotMarketing-->
+<div class="content" id="CotMarketing">
+
+
+</div>
+<!--CotManualI-->
+<div class="content" id="CotManualI">
+
+
+</div>
+<!--CotWeb-->
+<div class="content" id="CotWeb">
+
+
+</div>
+<!--CotFotografia-->
+<div class="content" id="CotFotografia">
+
+
+</div>
+<!--CotMultimedia-->
+<div class="content" id="CotMultimedia">
+
+
+</div>
+<!--CotIlustracion-->
+<div class="content" id="CotIlustracion">
+
+
+</div>
+
+
+
+<div class="deco"></div>
+<div class="table-Crud">
+  <table>
+    <thead>
+      <tr>
+        <th class="Title">Nombre del solicitante</th>
+        <th class="Title">Correo</th>
+        <th class="Title">Whatsapp</th>
+        <th class="Title">Nombre del proyecto</th>
+        <th class="Title">Público objetivo</th>
+        <th class="Title">Requisitos</th>
+        <th class="Title">Resultado esperado</th>
+        <th class="Title">Características principales</th>
+        <th class="Title">Especificación técnica</th>
+        <th class="Title">Aplicación móvil</th>
+        <th class="Title">Página web</th>
+        <th class="Title">Software empresarial</th>
+        <th class="Title">Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="Cot-Date">
+     
+    </tbody>
+  </table>
+  <div class="deco"></div>
+  <footer>
+    <div class="footcont">
+    <img class="footlogo" src="images/logotipo/logo20px.png">
+    
+  </div>
+      
+    <div class="footcont">
+      
+        <h4 style="color: white; cursor: pointer;">Horario de atención</h4>
+        <span style="color: white; cursor: pointer;">Lunes a Viernes</span>
+        <p style="color: white; cursor: pointer;">9:00 am - 5:00pm</p>
+        <h4 style="color: white; cursor: pointer;margin-top: 10px">Teléfonos</h4>
+        <span style="color: white; cursor: pointer;margin-top: 5px;">México</span>
+        <p style="color: white; cursor: pointer;">+52 775 137 1062</p>
+        <span style="color: white; cursor: pointer;margin-top: 5px">Perú</span>
+        <p style="color: white;">+51 775 953 325072</p>
+      </div>
+    
+    <div class="footcont">
+      
+    <ul class="footlist">
+      <li class="foot">Legal</li>
+      <li class="foot">Cookies</li>
+      <li class="foot">Privacy</li>
+      <li class="foot">Shipping</li>
+      <li class="foot">Refounds</li>
+    </ul>
+  </div>
+  <div class="footcont">
+    <div class="footer-s">
+      <a href="https://www.facebook.com/profile.php?id=100063825531920" class="href"><img src="images/logotipo/facebook.png" alt="Facebook" class="footico"></a>
+      <br>
+      <a href="" class="href"><img src="images/logotipo/instagram.png" alt="Instagram" class="footico"></a>
+      </div>
+  </div>
+  
+  </footer>
+</div>
+</body>
+
+<script>
+var selectedRow = null;
+
+function showAlert(message, className) {
+  const div = document.createElement("div");
+  div.className = `alert alert-${className}`;
+  div.appendChild(document.createTextNode(message));
+  const container = document.querySelector(".content");
+  const form = document.querySelector("#cotizacion_UXUI");
+  container.insertBefore(div, form);
+
+  setTimeout(() => document.querySelector(".alert").remove(), 3000);
+};
+//eliminar//
+document.querySelector("#Cot-Date").addEventListener("mousedown", (e) => {
+  const target = e.target;
+  if (target.classList.contains("delete")) {
+    target.parentElement.parentElement.remove();
+    showAlert("Cotizacion eliminada", "success");
+  }
+});
+//añadir//
+const form = document.querySelector("#cotizacion_UXUI");
+const table = document.querySelector("#tabla-cotizaciones");
+
+form.addEventListener("submit", (e) =>{
+  e.preventDefault();
+  
+  const solicitante_UXUI = document.getElementById("solicitante_UXUI").value;
+  const correo_UXUI = document.getElementById("correo_UXUI").value;
+  const telefono_UXUI = document.getElementById("telefono_UXUI").value;
+  const PROYECTO_UXUI = document.getElementById("PROYECTO_UXUI").value;
+  const Publico_UXUI = document.getElementById("Publico_UXUI").value;
+  const Requisito_UXUI = document.getElementById("Requisito_UXUI").value;
+  const Resultado_UXUI = document.getElementById("Resultado_UXUI").value;
+  const Caracteristica_UXUI = document.getElementById("Caracteristica_UXUI").value;
+  const Especificacion_UXUI = document.getElementById("Especificacion_UXUI").value;
+  const btn_appmovil = document.getElementById("btn-appmovil").checked;
+  const btn_pagweb = document.getElementById("btn-pagweb").checked;
+  const btn_software = document.getElementById("btn-software").checked;
+
+  // Crear nueva fila
+  const newRow = document.createElement("tr");
+  newRow.innerHTML = `
+    <td>${solicitante_UXUI}</td>
+    <td>${correo_UXUI}</td>
+    <td>${telefono_UXUI}</td>
+    <td>${PROYECTO_UXUI}</td>
+    <td>${Publico_UXUI}</td>
+    <td>${Requisito_UXUI}</td>
+    <td>${Resultado_UXUI}</td>
+    <td>${Caracteristica_UXUI}</td>
+    <td>${Especificacion_UXUI}</td>
+    <td>${btn_appmovil ? "Sí" : "No"}</td>
+    <td>${btn_pagweb ? "Sí" : "No"}</td>
+    <td>${btn_software ? "Sí" : "No"}</td>
+    <td><button class="btn-list edit">Editar</button><button class="btn-list delete">Eliminar</button></td>
+
+  `;
+  document.querySelector("#Cot-Date").appendChild(newRow);
+
+  // Agregar una nueva fila a una tabla
+  table.querySelector("tbody").appendChild(newRow);
+
+
+  // Limpiar entradas del formulario
+  form.reset();
+});
+
+
+
+//actualizar datos
+// Agregar un listener para el botón "Guardar cambios"
+document.querySelector("#guardar-cambios").addEventListener("click", () => {
+  target = e.target;
+  if (target.classList.contains("edit")) {
+    selectedRow = target.parentElement.parentElement;
+    document.querySelector("#solicitante_UXUI").value = selectedRow.cells[0].textContent;
+    document.querySelector("#correo_UXUI").value = selectedRow.cells[1].textContent;
+    document.querySelector("#telefono_UXUI").value = selectedRow.cells[2].textContent;
+    document.querySelector("#PROYECTO_UXUI").value = selectedRow.cells[3].textContent;
+    document.querySelector("#Publico_UXUI").value = selectedRow.cells[4].textContent;
+    document.querySelector("#Requisito_UXUI").value = selectedRow.cells[5].textContent;
+    document.querySelector("#Resultado_UXUI").value = selectedRow.cells[6].textContent;
+    document.querySelector("#Caracteristica_UXUI").value = selectedRow.cells[7].textContent;
+    document.querySelector("#Especificacion_UXUI").value = selectedRow.cells[8].textContent;
+    document.querySelector("#btn-appmovil").checked = selectedRow.cells[9].textContent === "Sí";
+    document.querySelector("#btn-pagweb").checked = selectedRow.cells[10].textContent === "Sí";
+    document.querySelector("#btn-software").checked = selectedRow.cells[11].textContent === "Sí";
+
+    // Agregar un listener para el botón "Guardar cambios"
+    document.querySelector("#guardar-cambios").addEventListener("click", () => {
+      // Capturar los valores editados del formulario
+      const solicitante = document.querySelector("#solicitante_UXUI").value;
+      const correo = document.querySelector("#correo_UXUI").value;
+      const telefono = document.querySelector("#telefono_UXUI").value;
+      const proyecto = document.querySelector("#PROYECTO_UXUI").value;
+      const publico = document.querySelector("#Publico_UXUI").value;
+      const requisito = document.querySelector("#Requisito_UXUI").value;
+      const resultado = document.querySelector("#Resultado_UXUI").value;
+      const caracteristica = document.querySelector("#Caracteristica_UXUI").value;
+      const especificacion = document.querySelector("#Especificacion_UXUI").value;
+      const appmovil = document.querySelector("#btn-appmovil").checked;
+      const pagweb = document.querySelector("#btn-pagweb").checked;
+      const software = document.querySelector("#btn-software").checked;
+
+      // Actualizar los valores en la fila seleccionada
+      selectedRow.cells[0].textContent = solicitante;
+      selectedRow.cells[1].textContent = correo;
+      selectedRow.cells[2].textContent = telefono;
+      selectedRow.cells[3].textContent = proyecto;
+      selectedRow.cells[4].textContent = publico;
+      selectedRow.cells[5].textContent = requisito;
+      selectedRow.cells[6].textContent = resultado;
+      selectedRow.cells[7].textContent = caracteristica;
+      selectedRow.cells[8].textContent = especificacion;
+      selectedRow.cells[9].textContent = appmovil ? "Sí" : "No";
+      selectedRow.cells[10].textContent = pagweb ? "Sí" : "No";
+      selectedRow.cells[11].textContent = pagweb ? "Sí" : "No";
+       form.reset();
+    });
+  }
+});
+
+
+
+
+
+  console.log("submit clicked");
+  console.log("list")
+</script>
+
+<script>
+
+const optionMenu = document.querySelector(".select-menu"),
+       selectBtn = optionMenu.querySelector(".select-btn"),
+       options = optionMenu.querySelectorAll(".opcion"),
+       sBtn_text = optionMenu.querySelector(".sBtn-text");
+
+selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));       
+
+options.forEach(option =>{
+    option.addEventListener("click", ()=>{
+        let selectedOption = option.querySelector(".option-text").innerText;
+        sBtn_text.innerText = selectedOption;
+
+        optionMenu.classList.remove("active");
+    });
+});
+/// Obtener el elemento del menú
+const menu = document.querySelector('.select-menu');
+
+// Obtener el div que quieres mostrar/ocultar
+const cotizacion = document.querySelector('#CotUXUI');
+
+// Agregar un event listener al menú
+menu.addEventListener('click', (event) => {
+  // Obtener la opción seleccionada
+  const opcionSeleccionada = event.target.closest('.opcion');
+
+  if (opcionSeleccionada) {
+    // Ocultar todos los divs de cotización
+    document.querySelectorAll('.content').forEach((div) => {
+      div.style.display = 'none';
+    });
+
+    // Mostrar solo el div correspondiente a la opción seleccionada
+    const target = opcionSeleccionada.dataset.target;
+    document.querySelector(`#${target}`).style.display = 'block';
+  }
+});
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
